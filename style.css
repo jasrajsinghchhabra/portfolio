@@ -1,4 +1,4 @@
-/* Basic Setup */
+
 
 * {
     margin: 0;
@@ -25,7 +25,7 @@ a {
 }
 
 
-/* Navbar */
+
 
 nav {
     padding: 20px 0;
@@ -50,7 +50,7 @@ nav {
 }
 
 
-/* Hero */
+
 
 .hero {
     padding: 120px 0;
@@ -76,7 +76,7 @@ span {
 }
 
 
-/* Sections */
+
 
 section {
     padding: 60px 0;
@@ -88,7 +88,7 @@ section {
 }
 
 
-/* About */
+
 
 .about {
     display: grid;
@@ -101,7 +101,7 @@ section {
 }
 
 
-/* Skills */
+
 
 .skills {
     display: grid;
@@ -116,7 +116,6 @@ section {
 }
 
 
-/* Learning Cards */
 
 .cards {
     display: grid;
@@ -135,7 +134,6 @@ section {
 }
 
 
-/* Education */
 
 .education {
     display: grid;
@@ -151,8 +149,6 @@ section {
     border-right: 1px solid #aaa;
 }
 
-
-/* Modal */
 
 .modal {
     width: 90%;
@@ -188,7 +184,6 @@ section {
 }
 
 
-/* Form */
 
 form {
     margin-top: 40px;
@@ -224,14 +219,10 @@ button {
 }
 
 
-/* Basic Transform */
-
 .hero h1 {
     transform: scale(1.01);
 }
 
-
-/* Mobile */
 
 @media (max-width: 700px) {
 
