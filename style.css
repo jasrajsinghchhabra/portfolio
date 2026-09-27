@@ -1,0 +1,260 @@
+/* Basic Setup */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f0e8;
+    color: #171717;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Navbar */
+
+nav {
+    padding: 20px 0;
+    border-bottom: 1px solid #aaa;
+
+    position: sticky;
+    top: 0;
+
+    background: #f4f0e8;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Hero */
+
+.hero {
+    padding: 120px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+.orange,
+span {
+    color: #c65d3c;
+}
+
+.hero h1 {
+    font-size: 80px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    font-size: 22px;
+}
+
+.hero p {
+    max-width: 600px;
+}
+
+
+/* Sections */
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+.title {
+    margin-bottom: 35px;
+}
+
+
+/* About */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about h2 {
+    font-size: 30px;
+}
+
+
+/* Skills */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.skills div {
+    padding: 25px;
+    border: 1px solid #aaa;
+    text-align: center;
+}
+
+
+/* Learning Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border: 1px solid #aaa;
+    min-height: 180px;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+}
+
+
+/* Education */
+
+.education {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    border: 1px solid #aaa;
+}
+
+.education div {
+    padding: 25px;
+}
+
+.number {
+    border-right: 1px solid #aaa;
+}
+
+
+/* Modal */
+
+.modal {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+
+    background: white;
+    border: 1px solid #aaa;
+
+    text-align: center;
+}
+
+
+/* Contact */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact h1 {
+    font-size: 50px;
+}
+
+.contact a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+
+    transition: 0.3s;
+}
+
+
+/* Form */
+
+form {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #888;
+    background: transparent;
+}
+
+textarea {
+    height: 100px;
+    grid-column: 1 / 3;
+}
+
+button {
+    grid-column: 1 / 3;
+
+    padding: 12px;
+
+    background: #171717;
+    color: white;
+
+    border: none;
+
+    transition: 0.3s;
+}
+
+
+/* Basic Transform */
+
+.hero h1 {
+    transform: scale(1.01);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .links {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .about,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
